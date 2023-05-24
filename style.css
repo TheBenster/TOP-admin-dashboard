@@ -1,33 +1,4 @@
-@media screen and (max-width:1240px){
-    .sidebar-item#head{
-        display: flex;
-        flex-direction: column;
-    }
-}
-@media screen and (max-width:1000px){
-    .sidebar-item#head h1{
-        display: none;
-    }
-    .sidebar-item#head{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right:50%;
-    }
-    svg#head{
-        width: 40px;
-        height: 40px;
-    }
-}
-@media screen and (max-width:880px) {
-    .sidebar-item h3{
-        display: none;
-        
-    }
-    .sidebar{
-        padding: 10px;
-    }
-  }
+
 
 
 body{
@@ -122,6 +93,7 @@ input[type='search']{
     
 }
 .profile{
+    padding-right: 30px;
     display:flex;
     align-items: center;
     gap: 25px;
@@ -243,6 +215,7 @@ button#share{
     padding-left: 30px;
     padding-top: 15px;
     padding-right: 30px;
+    margin-right: 50px;
 }
 .banner h3{
     font-size: 1rem;
@@ -271,4 +244,79 @@ img#proj{
 }
 .name p{
     color:#7d828c;
+}
+@media screen and (max-width:1240px){
+    .sidebar-item#head{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px){
+    .projects{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:1000px){
+    .display-container{
+        height: 152%;
+        overflow: hidden;
+    }
+    .sidebar-item#head h1{
+        display: none;
+    }
+    .sidebar-item#head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right:50%;
+    }
+    svg#head{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:880px) {
+    .sidebar-item h3{
+        display: none;
+        
+    }
+    .sidebar{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 450px){
+    .main-content{
+        overflow: hidden;
+        padding-right: 1fr
+    }
+     .banner{
+        width: 55%;
+        height: 20%;
+        font-size: .7rem;
+
+     }
+     .banner#trend{
+        width: 70%;
+        height: 15%;
+        font-size: .7rem;
+     }
+     .profile{
+        display: none;
+     }
+     .welcome{
+        grid-row: 2/3;
+     }
+     .btn-container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        height: 50%;
+        display:flex;
+        gap: 10px;
+     }
+     button#share{
+        font-size: .5rem;
+
+     }
+    
 }
