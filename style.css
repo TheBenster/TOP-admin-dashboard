@@ -35,7 +35,7 @@ body{
     height: 100vh;
 }
 .display-container{
-    height: 140%;
+    height: 150%;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: .2fr 1fr
@@ -258,7 +258,8 @@ img#proj{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 10px;
 }
 
 .trend-item{
